@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* font-family: 'Red Hat Display', sans-serif; */
+/* Weights: 500, 700, 900 */
+/* Font size (paragraph): 16px */
+
+
+/* -----------------------------------------------------------CSS RESET---------------------------------------------------- */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* --------------------------------------------------------------------- */
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 326px;
+    height: 566px;
+    border: none;
+    margin: 70px auto 70px auto;
+    border-radius: 6%;
+}
+
+.card__image {
+    border-radius: 10% 10% 0% 0%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 5% 50% 5%;
+    padding: 3% 3% 3% 3%;
+    /* border: 2px solid red; */
+    gap: 20px;
+}
+
+.card__text__title {
+    font-size: 23px ;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.card__text__description {
+    font-size: 16px;
+    color:var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+.card__text__button-payment {
+    background-color:var(--Bright-blue);
+    color: white;
+    font-weight: 700;
+    padding: 6% 20% 6% 20%;
+    border-radius: 8%;
+    border: 0;
+}
+
+.card__text__button-cancel {
+    background-color: #FFFFFF;
+    border: 0;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+}
+
+.card__text__button-price {
+    background-color: var(--Very-pale-blue);
+    border: 0;
+    padding: 5% 20% 5% 20%;
+}
